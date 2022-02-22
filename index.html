@@ -39,6 +39,165 @@
             font-family:'Roboto','Noto Sans KR', sans-serif;
             font-size:14px;
         }
+
+
+        /* 스킵메뉴 */
+        .skip-menu a{
+            display:inline-block;
+            position:fixed;
+            width:100px;
+            padding:5px;
+            top:-100px;
+            z-index:99999;
+            border:2px solid #000;
+            background-color:#fff;
+            text-align:center;
+        }
+        .skip-menu a:focus{
+            top:0;
+        }
+        
+
+
+        .wrap{
+            width:1200px;
+            margin:0 auto;
+            display:flex;
+            flex-flow:row wrap;
+        }
+        header{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:space-between;
+            position:relative;
+        }
+        .header img{
+            height:60px;
+            margin:20px 0;
+        }
+        .nav{
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .nav a{
+            font-size:16px;
+            font-weight:700;
+        }
+        .nav li{
+            width:130px;
+            text-align:center;
+
+            margin-top:60px;
+            padding:10px 0;
+            border:1px solid #000;
+        }
+        .nav li:nth-child(1),
+        .nav li:nth-child(2),
+        .nav li:nth-child(3){
+            border-right:none;
+        }
+        .nav li:hover{
+            color:#fff;
+            background-color: #000;
+            transition:0.3s;
+        }
+
+
+        .sub-nav{
+            position:absolute;
+            left:0;
+            right:0;
+            top:100%;
+            z-index:9999;
+            color:#fff;
+            background-color: #000;
+
+            display: flex;
+            flex-flow:row wrap;
+            justify-content: flex-end;
+
+            height:0;
+            overflow: hidden;
+            transition:0.3s;
+        }
+        .sub-nav ul{
+            padding:10px 0;
+            width:130px;
+            text-align:center;
+        }
+        .sub-nav ul li{
+            padding:5px;
+        }
+        .sub-nav ul:nth-child(1),
+        .sub-nav ul:nth-child(2),
+        .sub-nav ul:nth-child(3){
+            border-right:1px solid transparent;
+        }
+
+        .header,.slider,.footer{
+            width:100%;
+        }
+
+
+
+
+
+
+        .main{
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:space-between;
+
+
+        }
+
+
+        .notice{
+            display:flex;
+            flex-flow:column nowrap;
+            width:366.666666px;
+            margin-right:50px;
+
+        }
+        .gallery{
+            display:flex;
+            flex-flow:column nowrap;
+            width:366.666666px;
+            margin-right:50px;
+        }
+        .gallery-contents img{
+            display:flex;
+            flex-flow:row nowrap;
+            width:120px;
+            height:170px;
+
+        }
+        .banner{
+            position: relative;
+            width:366.666666px;
+
+
+        }
+        .banner img{
+            width:100%;
+            position: absolute;
+        }
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -50,13 +209,146 @@
 
     <section class="sec wrap">
         <header class="header">
-            <div class="container">
+                <h1>
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="로고">
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>
+                        </ul>
+                    </div>
 
-            </div>
+                </nav>
         </header>
-        <section class="sec slide"></section>
-        <section class="sec main"></section>
-        <footer class="footer"></footer>
+
+
+        <section class="sec slider">
+                <div class="slider-img-box">
+                    <div>
+                        <a href="#">
+                            <img src="./images/slider01.jpg" alt="슬라이더1">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/slider02.png" alt="슬라이더2">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/slider03.png" alt="슬라이더3">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="./images/slider04.jpg" alt="슬라이더4">
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+
+
+        <section class="sec main">
+                <div class="notice">
+                    <h2>공지사항</h2>
+                    <div class="notice-contents">
+                        <p>2022년도 국가기술자격검정 시행계획 공고</p>
+                        <p>코로나19 자가격리자 국가자격시험 응시조치 안내</p>
+                        <p>모바일 신분증 시험 신분증 인정예정 안내</p>
+                    </div>                    
+                </div>
+                <div class="gallery">
+                    <h2>갤러리</h2>
+                    <div class="gallery-contents">
+                        <a href="#">
+                            <img src="./images/gallery-html.png" alt="html">
+                        </a>
+                        <a href="#">
+                            <img src="./images/gallery-css.png" alt="css">
+                        </a>
+                        <a href="#">
+                            <img src="./images/gallery-js.png" alt="js">
+                        </a>
+                    </div>                    
+                </div>
+                <div class="banner">
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./images/banner.png" alt="배너">
+                        </a>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <address></address>
+            </div>
+        </footer>
     </section>
+
+
+    <script>
+        let navEls=document.querySelectorAll('.nav li');
+        let subnavEl=document.querySelector('.sub-nav');
+        console.log(subnavEl);
+        navEls[0].onmouseenter=function(){
+            subnavEl.style.height='130px';
+        }
+        navEls[1].onmouseenter=function(){
+            subnavEl.style.height='130px';
+        }
+        navEls[2].onmouseenter=function(){
+            subnavEl.style.height='130px';
+        }
+        navEls[3].onmouseenter=function(){
+            subnavEl.style.height='130px';
+        }
+
+        subnavEl.onmouseleave=function(){
+            subnavEl.style.height='0';
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

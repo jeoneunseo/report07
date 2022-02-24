@@ -1,0 +1,149 @@
+/* SLIDER */
+.slider{
+    position: relative;
+    z-index:99;
+}
+.slider .inner{
+    height:300px;
+    position:relative;
+    overflow:hidden;
+}
+
+
+/* FADE */
+.slider .img-box{
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:0;
+    transition:1s;
+}
+.slider .img-box:first-child{
+    opacity:1;
+}
+
+.pager{
+    position:absolute;
+    left:50%;
+    top:85%;
+    transform: translate(-50%);
+    
+}
+
+
+.pager span{
+    display: inline-block;
+    width:2rem;
+    height:2rem;
+    margin:0 0.5rem;
+    border-radius:50%;
+    background-color:#999;
+    text-indent:-99999px;
+}
+.pager span:hover{
+    background-color: #000;
+}
+
+.main{
+    margin:50px 0;
+
+}
+.main article{
+    height:200px;
+}
+
+.slider h2,.main h2,.banner h3{
+    display: none;
+}
+
+
+
+.notice,.gallery{
+    padding:20px;
+}
+.notice h3,.gallery h3{
+    margin-bottom:10px;
+}
+
+
+.gallery-list{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+.gallery-list li{
+    width:30%;
+}
+
+
+.gallery-list img{
+    height:120px;
+}
+
+.banner a img{
+    height:200px;
+}
+
+
+
+
+.footer.inner{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+    height:100px;
+    padding:30px 0;
+}
+.footer h2 a{
+    flex:1;
+    text-align: center;
+}
+.footer address{
+    flex:3;
+    text-align: center;
+}
+.footer select{
+    flex:1;
+    text-align: center;
+    padding:10px 0;
+
+}
+
+
+
+
+
+.modal{
+    display:none;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:100;
+    background-color:rgba(0,0,0,0.5);
+}
+.modal .inner{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+    width:500px;
+    padding:1.5rem;
+    border-radius:1rem;
+    background-color:#fff;
+}
+.modal-tit{
+    margin-bottom:1rem;
+    font-weight:500;
+    font-size:1.2rem;
+}
+.modal-txt{
+    margin-bottom:2rem;
+}
+
+

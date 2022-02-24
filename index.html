@@ -4,324 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- 오픈그래픽 -->
-    <meta property="og:image" content="./images/og-img.png">
-    <meta property="og:url" content="https://jeoneunseo.github.io/report07">
-    <meta property="og:title" content="전은서 포트폴리오"> 
-    <meta property="og:description" content="Welcome to my portfolio">
-    
-    <!-- 트위터 카드 -->
-    <meta name="twitter:card" content="summary">
-    <meta name ="twitter:image" content="./images/og-img.png">
-    <meta name ="twitter:url" content="https://jeoneunseo.github.io/report07">
-    <meta name ="twitter:title" content="전은서 포트폴리오"> 
-    <meta name ="twitter:description" content="Welcome to my portfolio">
-
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <!-- CSS Reset -->
     <link rel="stylesheet" href="./css/reset.css">
-    
-    <title>전은서 포트폴리오</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>평가7</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/index.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        :root{
-            font-family:'Roboto','Noto Sans KR', sans-serif;
-            font-size:14px;
-        }
-        .skip-menu a{
-            display:inline-block;
-            position:fixed;
-            width:100px;
-            padding:5px;
-            top:-100px;
-            z-index:99999;
-            border:2px solid #000;
-            background-color:#fff;
-            text-align:center;
-        }
-        .skip-menu a:focus{
-            top:0;
-        }
-        
-
-
-        .wrap{
-            width:1200px;
-            margin:0 auto;
-            display:flex;
-            flex-flow:row wrap;
-        }
-        header{
-            display:flex;
-            flex-flow:row wrap;
-            justify-content:space-between;
-            position:relative;
-        }
-        .header img{
-            height:60px;
-            margin:20px 0;
-        }
-        .nav{
-            display:flex;
-            flex-flow:row wrap;
-        }
-        .nav a{
-            font-size:16px;
-            font-weight:700;
-        }
-        .nav li{
-            width:130px;
-            text-align:center;
-
-            margin-top:60px;
-            padding:10px 0;
-            border:1px solid #000;
-        }
-        .nav li:nth-child(1),
-        .nav li:nth-child(2),
-        .nav li:nth-child(3){
-            border-right:none;
-        }
-        .nav li:hover{
-            color:#fff;
-            background-color: #000;
-            transition:0.3s;
-        }
-
-
-        .sub-nav{
-            position:absolute;
-            left:0;
-            right:0;
-            top:100%;
-            z-index:9999;
-            color:#fff;
-            background-color: #000;
-
-            display: flex;
-            flex-flow:row wrap;
-            justify-content: flex-end;
-
-            height:0;
-            overflow: hidden;
-            transition:0.3s;
-        }
-        .sub-nav ul{
-            padding:10px 0;
-            width:130px;
-            text-align:center;
-        }
-        .sub-nav ul li{
-            padding:5px;
-        }
-        .sub-nav ul:nth-child(1),
-        .sub-nav ul:nth-child(2),
-        .sub-nav ul:nth-child(3){
-            border-right:1px solid transparent;
-        }
-
-        .header,.slider,.footer{
-            width:100%;
-        }
-        .main{
-            display:flex;
-            flex-flow:row nowrap;
-            justify-content:space-between;
-            margin:0 auto;
-        }
-
-
-        .notice{
-            display:flex;
-            flex-flow:column nowrap;
-            margin-right:50px;
-
-        }
-        .gallery{
-            display:flex;
-            flex-flow:column nowrap;
-            margin-right:50px;
-        }
-        .gallery-contents img{
-            width:100px;
-            height:170px;
-            margin:0 auto;
-
-        }
-        .banner img{
-            width:100px;
-        }
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
     </style>
 </head>
 <body>
-    <section class="sec skip-menu">
-        <a href="#">헤더 바로가기</a>
-        <a href="#">본문 바로가기</a>
-        <a href="#">푸터 바로가기</a>
-    </section>
-
-    <section class="sec wrap">
+    <div class="wrap">
         <header class="header">
-                <h1>
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="로고">
-                    </a>
-                </h1>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">PROFILE</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                    <div class="sub-nav">
-                        <ul>
-                            <li><a href="#">SubMenu-1</a></li>
-                            <li><a href="#">SubMenu-2</a></li>
-                            <li><a href="#">SubMenu-3</a></li>
-                            <li><a href="#">SubMenu-4</a></li>
+            <div class="container">
+                <div class="inner clearfix">
+                    <h1 class="logo f-left"><a href="#">로고</a></h1>
+                    <nav class="nav f-right">
+                        <ul class="main-menu">
+                            <h2>메인메뉴</h2>
+                            <li class="menu" id="menu01"><a href="#">MENU-1</a></li>
+                            <li class="menu" id="menu02"><a href="#">MENU-2</a></li>
+                            <li class="menu" id="menu03"><a href="#">MENU-3</a></li>
+                            <li class="menu" id="menu04"><a href="#">MENU-4</a></li>
                         </ul>
-                        <ul>
-                            <li><a href="#">SubMenu-1</a></li>
-                            <li><a href="#">SubMenu-2</a></li>
-                            <li><a href="#">SubMenu-3</a></li>
-                            <li><a href="#">SubMenu-4</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">SubMenu-1</a></li>
-                            <li><a href="#">SubMenu-2</a></li>
-                            <li><a href="#">SubMenu-3</a></li>
-                            <li><a href="#">SubMenu-4</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">SubMenu-1</a></li>
-                            <li><a href="#">SubMenu-2</a></li>
-                            <li><a href="#">SubMenu-3</a></li>
-                            <li><a href="#">SubMenu-4</a></li>
-                        </ul>
-                    </div>
-
-                </nav>
+                        <div class="sub-menu clearfix">
+                            <ul class="celarfix f-right">
+                                <h2>서브메뉴</h2>
+                                <li class="f-left">
+                                    <a href="#">SubMenu-1</a>
+                                    <a href="#">SubMenu-2</a>
+                                    <a href="#">SubMenu-3</a>
+                                    <a href="#">SubMenu-4</a>
+                                </li>
+                                <li class="f-left">
+                                    <a href="#">SubMenu-1</a>
+                                    <a href="#">SubMenu-2</a>
+                                    <a href="#">SubMenu-3</a>
+                                    <a href="#">SubMenu-4</a>
+                                </li>
+                                <li class="f-left">
+                                    <a href="#">SubMenu-1</a>
+                                    <a href="#">SubMenu-2</a>
+                                    <a href="#">SubMenu-3</a>
+                                    <a href="#">SubMenu-4</a>
+                                </li>
+                                <li class="f-left">
+                                    <a href="#">SubMenu-1</a>
+                                    <a href="#">SubMenu-2</a>
+                                    <a href="#">SubMenu-3</a>
+                                    <a href="#">SubMenu-4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </header>
-
-
         <section class="sec slider">
-                <div class="slider-img-box">
-                    <div>
-                        <a href="#">
-                            <img src="./images/slider01.jpg" alt="슬라이더1">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/slider02.png" alt="슬라이더2">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/slider03.png" alt="슬라이더3">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img src="./images/slider04.jpg" alt="슬라이더4">
-                        </a>
-                    </div>
+            <div class="container">
+                <h2>슬라이더</h2>
+                <div class="inner">
+                    <div class="img-box"><a href="#"><img src="./images/slider01.jpg" alt="슬라이더1"></a></div>
+                    <div class="img-box"><a href="#"><img src="./images/slider02.png" alt="슬라이더2"></a></div>
+                    <div class="img-box"><a href="#"><img src="./images/slider04.jpg" alt="슬라이더3"></a></div>
                 </div>
+                <div class="pager">
+                    <span index-num="0" id="btn-slide01">1</span>
+                    <span index-num="1" id="btn-slide02">2</span>
+                    <span index-num="2" id="btn-slide03">3</span>
+                </div>
+            </div>
         </section>
-
-
-
         <section class="sec main">
-                <div class="notice">
-                    <h2>공지사항</h2>
-                    <div class="notice-contents">
-                        <p>2022년도 국가기술자격검정 시행계획 공고</p>
-                        <p>코로나19 자가격리자 국가자격시험 응시조치 안내</p>
-                        <p>모바일 신분증 시험 신분증 인정예정 안내</p>
-                    </div>                    
+            <div class="container">
+                <h2>메인</h2>
+                <div class="inner celarfix">
+                    <article class="notice f-left w-30">
+                        <h3>공지사항</h3>
+                        <div class="notice-txt clearfix">
+                            <div class="title f-left">[안내] 2022년도 국가기술자격검정 시행계획 공고</div>
+                        </div>
+                        <div class="notice-txt clearfix">
+                            <div class="title f-left">[안내] 모바일 신분증 시험 신분증 인정예정 안내</div>
+                        </div>
+                        <div class="notice-txt clearfix">
+                            <div class="title f-left">코로나19 자가격리자 국가자격시험 응시조치 안내</div>
+                        </div>
+                    </article>
+                    <article class="gallery f-left w-30">
+                        <h3>갤러리</h3>
+                        <ul class="gallery-list clearfix">
+                            <li class=" f-left">
+                                <div class="img-box"><a href="#"><img src="./images/gallery01.png" alt="갤러리1"></a></div>
+                            </li>
+                            <li class="f-left">
+                                <div class="img-box"><a href="#"><img src="./images/gallery02.png" alt="갤러리2"></a></div>
+                            </li>
+                            <li class=" f-left">
+                                <div class="img-box"><a href="#"><img src="./images/gallery03.png" alt="갤러리3"></a></div>
+                            </li>
+                        </ul>
+
+                    </article>
+                    <article class="banner f-left w-30 m-r-0">
+                        <h3>배너</h3>
+                        <div class="img-box"><a href="#"><img src="./images/banner.png" alt="배너"></a></div>
+                    </article>
                 </div>
-                <div class="gallery">
-                    <h2>갤러리</h2>
-                    <div class="gallery-contents">
-                        <a href="#">
-                            <img src="./images/gallery-html.png" alt="html">
-                        </a>
-                        <a href="#">
-                            <img src="./images/gallery-css.png" alt="css">
-                        </a>
-                        <a href="#">
-                            <img src="./images/gallery-js.png" alt="js">
-                        </a>
-                    </div>                    
-                </div>
-                <div class="banner">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="./images/banner.png" alt="배너">
-                        </a>
-                    </div>
-                </div>
+            </div>
         </section>
         <footer class="footer">
             <div class="container">
-                <address></address>
+                <div class="inner">
+                    <h2 class="f-left"><a href="#">로고</a></h2>
+                    <address>
+                        Copyright JES
+                    </address>
+                    <select class="f-right">
+                        <option disbeld>패밀리 사이트</option>
+                        <option value="01">패밀리상사</option>
+                        <option value="01">패밀리전자</option>
+                        <option value="01">패밀리과학</option>
+                        <option value="01">패밀리조선</option>
+                    </select>
+                </div>
             </div>
         </footer>
-    </section>
+    </div>
+
+    <div class="modal">
+        <div class="container">
+            <div class="inner">
+                <div class="modal-tit">
+                    모달타이틀
+                </div>
+                <div class="modal-txt">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit inventore iure libero recusandae eius. Illo, necessitatibus quae sequi incidunt expedita dicta deserunt reprehenderit, corporis, animi culpa odit veritatis voluptatem! Eos.
+                </div>
+                <div class="clearfix">
+                    <button class="btn-modal-close f-right" type="button">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <script>
-        let navEls=document.querySelectorAll('.nav li');
-        let subnavEl=document.querySelector('.sub-nav');
-        console.log(subnavEl);
-        navEls[0].onmouseenter=function(){
-            subnavEl.style.height='130px';
-        }
-        navEls[1].onmouseenter=function(){
-            subnavEl.style.height='130px';
-        }
-        navEls[2].onmouseenter=function(){
-            subnavEl.style.height='130px';
-        }
-        navEls[3].onmouseenter=function(){
-            subnavEl.style.height='130px';
-        }
-
-        subnavEl.onmouseleave=function(){
-            subnavEl.style.height='0';
-        }
-
-    </script>
-
-
-
-
-
-
-
-
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/myscript.js"></script>
+    <script src="./js/myscript2.js"></script>
 
 </body>
 </html>

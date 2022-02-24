@@ -47,10 +47,11 @@
 
 .main{
     margin:50px 0;
-
 }
+
 .main article{
     height:200px;
+    margin-bottom:20px;
 }
 
 .slider h2,.main h2,.banner h3{

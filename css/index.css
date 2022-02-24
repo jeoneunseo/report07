@@ -93,24 +93,39 @@
     flex-flow:row nowrap;
     justify-content:space-between;
     align-items:center;
+    
+    
 
+
+}
+
+.footer h2,.footer address,.footer select{
+    display: inline-block;
     height:100px;
     padding:30px 0;
+
+
 }
-.footer h2 a{
-    flex:1;
+.footer h2{
+    width:235px;
+    /* flex:1; */
     text-align: center;
 }
+
 .footer address{
-    flex:3;
+    width:720px;
+    /* flex:3; */
     text-align: center;
 }
 .footer select{
-    flex:1;
+    width:235px;
+    /* flex:1; */
     text-align: center;
-    padding:10px 0;
+    /* height:50px; */
 
 }
+
+
 
 
 
